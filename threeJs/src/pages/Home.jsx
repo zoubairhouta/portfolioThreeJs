@@ -5,9 +5,10 @@ import {Island } from '../models/Island'
 import Sky  from '../models/Sky'
 import Bird from '../models/Bird'
 import Plane from '../models/Plane'
+import HomeInfo from '../components/HomeInfo'
 
 const Home = () => {
-const [CurrentStage,setCurrentStage] = useState(1);
+const [currentStage,setCurrentStage] = useState(1);
   const [isRotating,setIsRotating] =useState(false);
     {/*         
     <div className ="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
@@ -61,7 +62,7 @@ const [CurrentStage,setCurrentStage] = useState(1);
     <section className="w-full h-screen relative">
     
     <div className ="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-    Popup
+    {currentStage&& <HomeInfo currentStage={currentStage}/>}
     
     </div>
     <div className ="absolute top-0 left-0 right-0 bottom-0 z-0"></div>
