@@ -66,7 +66,7 @@ showAlert({show : true, text : 'message sent successfully!', type : 'success'})
 
 };
   return (
-    <section className ="relative flex lg:flex-row flex-col max-container">
+    <section className ="relative flex lg:flex-row flex-col max-container h-[100vh]">
       {alert.show && <Alert {...alert}/>}
       <Alert text = "ya3tek3asba"/>
 <div className ="flex-1 min-w-[50%] flex-col">
